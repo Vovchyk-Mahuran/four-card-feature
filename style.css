@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+p,
+h1 {
+  margin: 0;
+}
+.project {
+  background-color: hsl(0, 0%, 98%);
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+.main-title {
+  margin-bottom: 26px;
+  font-size: 34px;
+  font-weight: 100;
+  color: hsl(229, 6%, 66%);
+  line-height: 45px;
+}
+.main-title span {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.main-descr {
+  margin-bottom: 70px;
+}
+.flex-item-title {
+  color: hsl(234, 12%, 34%);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 22px;
+}
+.flex-item-descr {
+  margin-bottom: 31px;
+  line-height: 20px;
+}
+.flex-item-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 6px;
+}
+.flex-item {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  border-top: 7px solid hsl(180, 62%, 55%);
+  border-radius: 7px;
+  background-color: #fff;
+  margin-right: 20px;
+  max-width: 380px;
+  box-shadow: 7px 12px 6px -1px rgba(179, 166, 166, 0.3),
+    -7px 12px 6px -1px rgba(179, 166, 166, 0.3);
+}
+.flex-item.red {
+  border-top: 7px solid hsl(0, 78%, 62%);
+  margin-bottom: 40px;
+}
+.flex-item.orange {
+  border-top: 7px solid hsl(34, 97%, 64%);
+}
+.flex-item.blue {
+  border-top: 7px solid hsl(212, 86%, 64%);
+  margin-right: 0;
+}
+.column-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexbox-section {
+  display: flex;
+  flex-direction: row;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-container {
+  max-width: 300px;
+  margin-left: 25px;
+}
+@media (max-width: 1140px) {
+  .flexbox-section {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1088px) {
+  .flexbox-section {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .flex-item.green,
+  .flex-item.orange,
+  .flex-item.red {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    margin: 0 40px;
+  }
+  .main-title {
+    font-size: 25px;
+  }
+  .main-descr {
+    font-size: 17px;
+  }
+}
